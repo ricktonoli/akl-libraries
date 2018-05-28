@@ -1,0 +1,10 @@
+version: '2.0'
+services:
+  auckland-libraries:
+    container_name: auckland_libraries
+    image: docker.tonoli.io:5000/auckland-libraries:1.0.0
+    ports: 
+      - 3101:3101
+    restart: on-failure
+    volumes:
+      - /opt/auckland-libraries/src/:/opt/auckland-libraries/src/
