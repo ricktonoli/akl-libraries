@@ -5,6 +5,6 @@ services:
     image: docker.tonoli.io:5000/auckland-libraries:1.0.0
     ports: 
       - 3101:3101
-    restart: on-failure
+    restart: unless-stopped
     volumes:
-      - /opt/auckland-libraries/src/:/opt/auckland-libraries/src/
+      - /opt/akl-libraries/src/:/opt/akl-libraries/src/
