@@ -3,8 +3,7 @@ services:
   auckland-libraries:
     container_name: auckland_libraries
     image: docker.tonoli.io:5000/auckland-libraries:1.0.0
-    ports: 
-      - 3101:3101
+    network_mode: host
     restart: unless-stopped
     volumes:
       - /opt/akl-libraries/src/:/opt/akl-libraries/src/

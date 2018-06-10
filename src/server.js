@@ -7,7 +7,7 @@ var PushBullet = require('pushbullet');
 
 var app = express();
 
-var scriptPath = "/opt/auckland-libraries/src/";
+var scriptPath = "/opt/akl-libraries/src/";
 
 // add timestamps in front of log messages
 //require('console-stamp')(console, '[HH:MM:ss.l]');
